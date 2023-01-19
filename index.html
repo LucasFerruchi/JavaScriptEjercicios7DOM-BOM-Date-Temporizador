@@ -2,38 +2,67 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ejercicio de JavaScript Temporizador con DATE">
-    <meta name="keywords" content="java, javascript, dom, bom, date, temporizador, tiempo">
-    <meta name="author" content="Lucas Rodolfo Ferruchi">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ejercicio de JavaScript Temporizador con DATE" />
+    <meta name="keywords" content="java, javascript, dom, bom, date, temporizador, tiempo" />
+    <meta name="author" content="Lucas Rodolfo Ferruchi" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <title>Temporizador</title>
 </head>
 
 <body>
     <header class="text-light container">
         <h1 class="text-center mt-5">Termporizador</h1>
-        <hr>
+        <hr />
     </header>
     <main class="container">
         <section>
             <article class="bg-light rounded p-3">
                 Seleccione un temporizador
                 <div class="list-group mt-4">
-                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(15)">Temporizador de 15 segundos</button>
-                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(30)">Temporizador de 30 segundos</button>
-                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(1)">Temporizador de 1 minuto</button>
-                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(2)">Temporizador de 2 minutos</button>
-
+                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(15)">
+              Temporizador de 15 segundos
+            </button>
+                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(30)">
+              Temporizador de 30 segundos
+            </button>
+                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(1)">
+              Temporizador de 1 minuto
+            </button>
+                    <button type="button" class="list-group-item list-group-item-action" onclick="establecerTiempo(2)">
+              Temporizador de 2 minutos
+            </button>
                 </div>
-
+            </article>
+            <article>
+                <p id="tiempo" class="fechaHora fs-1 text-light text-center mt-4">
+                    00:00
+                </p>
+                <div class="text-center">
+                    <button class="btn btn-secces disable" onclick="iniciar()" id="btnIniciar">
+              Iniciar
+            </button>
+                    <button class="btn btn-danger disable" onclick="detener()" id="btnDetener">
+              Detener
+            </button>
+                </div>
             </article>
         </section>
     </main>
-    <footer></footer>
+    <footer class="text-center bg-dark text-light py-3">
+        <p class="m-0 text-secondary">
+            <small>By
+            <a href="https://github.com/LucasFerruchi" class="text-secondary">Lucas Ferruchi</a>
+        </small>
+        </p>
+        <p class="m-0 text-secondary">
+            <small>&copy; Todos los derechos reservados</small>
+        </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
