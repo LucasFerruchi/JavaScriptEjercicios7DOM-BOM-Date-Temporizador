@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #000000;
-    background-image: url(/img/Time.avif);
+    background-image: url(/img/time1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -17,9 +17,10 @@ main {
 
 .fechaHora {
     font-family: 'Advent Pro', sans-serif;
-    font-size: 2em;
+    font-size: 5rem !important;
 }
 
 section {
     min-height: 80vh;
+    opacity: 70%;
 }
