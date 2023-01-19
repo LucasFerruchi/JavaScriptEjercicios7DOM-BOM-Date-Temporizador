@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Inconsolata:wght@300&family=Italianno&family=Lato:wght@300;400;700&family=MonteCarlo&family=Montserrat:ital,wght@0,400;1,300;1,400&family=MuseoModerno:wght@200&family=Oswald:wght@300&family=Roboto+Serif:ital,opsz,wght@1,8..144,100;1,8..144,200&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000000;
+    background-image: url(/img/Time.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.fechaHora {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2em;
+}
+
+section {
+    min-height: 80vh;
+}
